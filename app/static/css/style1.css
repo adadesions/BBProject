@@ -22,7 +22,7 @@ CONTENTS:
 */
 /* Import css */
 /* Google font */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'); */
 /* bootstrap */
 @import url('bootstrap.css');
 /* bootstrap responsive */
@@ -276,8 +276,14 @@ h2.pagetitle {
 
 .navbar-fixed-top .container {
 /* Uncomment to make nav expand full width */
- /*	width: auto; */
+	width: auto;
+ 	background-color: rgb(124, 4, 133)
 }
+.nav-container {
+	padding-left: 10%;
+	/* padding-right: 10%; */
+}
+
 .navbar .brand {
 	margin-left:0;
 	padding: 0;
@@ -293,9 +299,9 @@ h2.pagetitle {
 }
 .navbar .brand a:hover {
 	text-decoration: none;
- transition: color .15s linear;
- -webkit-transition: color .15s linear;
- -moz-transition: color .15s linear;
+	transition: color .15s linear;
+	-webkit-transition: color .15s linear;
+	-moz-transition: color .15s linear;
 }
 .navbar .brand a:focus {
 	outline: none;
@@ -305,8 +311,8 @@ h2.pagetitle {
 }
 .navbar-inverse .navbar-inner {
 	background-repeat: repeat;
-	background-color: #0b333f;
 }
+
 .navbar-wrapper {
 	overflow:hidden;
 }
@@ -371,7 +377,7 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../img/bg/bg-1.jpg) no-repeat center center fixed;
+	background: #444 url(../img/cover-bg.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -480,6 +486,13 @@ section.spacer {
 }
 
 .spacer.green,.section.green h4 {
+	color:#fff;
+}
+
+.spacer.purple,.section.purple {
+	background:#d84848;
+}
+.spacer.purple,.section.purple h4 {
 	color:#fff;
 }
 
@@ -1690,7 +1703,7 @@ i.icon-white {
  display: block;
  text-align:center
 }
- .job-position: {
+ .job-position {
  margin-bottom: 1.5em;
 }
  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
