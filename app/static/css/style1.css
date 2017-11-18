@@ -299,9 +299,9 @@ h2.pagetitle {
 }
 .navbar .brand a:hover {
 	text-decoration: none;
-	transition: color .15s linear;
+	/* transition: color .15s linear;
 	-webkit-transition: color .15s linear;
-	-moz-transition: color .15s linear;
+	-moz-transition: color .15s linear; */
 }
 .navbar .brand a:focus {
 	outline: none;

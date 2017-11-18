@@ -17,7 +17,7 @@ ul#menu-main > li > a:hover {
 
 
 ul#menu-main > li > a:focus,ul#menu-main > li > a:active, ul#menu-main > li > a.selected, ul#menu-main li a.selected:active    {
-	color: #1BAC91;
+	color: #FFE600;
 }
 #header-wrapper h1 span {
 	color:#1BAC91;
