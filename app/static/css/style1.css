@@ -377,7 +377,7 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../img/cover-bg.png) no-repeat center center fixed;
+	background: #444 url(../img/bg/bg_bb.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1726,4 +1726,13 @@ i.icon-white {
 	#contact-form input[type=submit] {
 		width: 100%;
 	}
+}
+
+/* Ada's Style */
+.ada-ul{
+	margin-left: 1.5em;
+	padding-left: 1em;
+}
+ul.ada-ul li{
+	font-size: 23px;
 }
