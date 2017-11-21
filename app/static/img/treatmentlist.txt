@@ -1,0 +1,8 @@
+static/img/happen/treatment/treatment1.jpg
+static/img/happen/treatment/treatment2.jpg
+static/img/happen/treatment/treatment3.jpg
+static/img/happen/treatment/treatment4.jpg
+static/img/happen/treatment/treatment5.jpg
+static/img/happen/treatment/treatment6.jpg
+static/img/happen/treatment/treatment7.jpg
+static/img/happen/treatment/treatment8.jpg

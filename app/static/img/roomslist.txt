@@ -1,0 +1,4 @@
+static/img/happen/rooms/room1.jpg
+static/img/happen/rooms/room2.jpg
+static/img/happen/rooms/room3.jpg
+static/img/happen/rooms/room4.jpg

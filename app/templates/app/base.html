@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Be Balance Clinic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="static/css/style1.css" rel="stylesheet">
+	<link href="static/color/default.css" rel="stylesheet">
+	<link rel="shortcut icon" href="static/img/favicon.ico">
+</head>
+
+<body>
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container nav-container">
+                        <!-- Responsive navbar -->
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span><span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <h1 class="brand"><a href="{% url 'app:detail' %}">Be Balance Clinic</a></h1>
+                            <!-- navigation -->
+                            <nav class="pull-right nav-collapse collapse">
+                                <ul id="menu-main" class="nav">
+                                    <li><a title="team" href="#about">รู้จักโครงการ</a></li>
+                                    <li><a title="services" href="#services">กิจกรรม</a></li>
+                                    <li><a title="works" href="#works">ภาพกิจกรรม</a></li>
+                                    <li><a title="blog" href="#blog">กำหนดการ</a></li>
+                                    <li><a title="contact" href="#contact">สมัครเลย</a></li>
+                                </ul>
+                            </nav>
+                    </div>
+                </div>
+            </div>
+	</div>
+	<!-- Header area -->
+	<div id="header-wrapper" class="header-slider">
+		<header class="clearfix">
+			<div class="logo">
+			    <img src="static/img/logo-image.png" alt="" />
+			</div>
+			<div class="container">
+                            <div class="row">
+                                <div class="span12">
+                                    <div id="main-flexslider" class="flexslider">
+                                        <ul class="slides">
+                                            <li>
+                                                <p class="home-slide-content">
+												   be  <strong>Happy</strong> , be <strong>Healthy</strong>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="home-slide-content">
+                                                    by <strong>Be Balance</strong>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end slider -->
+                                </div>
+                            </div>
+			</div>
+		</header>
+	</div>
+	<!-- spacer section -->
+	<section class="spacer purple">
+            <div class="container quote-style">
+                <div class="row">
+                    <div class="span6 alignright flyLeft">
+                        <blockquote class="large">
+							สุขภาพดีเป็น ธรรม(มะ)ชาติ ของความสุข
+                            <cite>จิตติมา วิสูตรตระการ, นักกายภาพบำบัด</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+	</section>
+	<!-- end spacer section -->
+	<!-- section: team -->
+	<section id="about" class="section">
+		<div class="container">
+			<h4>
+				โครงการ New Year, New You
+				<br>
+				@เขาใหญ่
+			</h4>
+			<div class="row">
+				<div class="span5 offset1">
+                                    <div>
+										<h2>อะไรคือ <strong>New Year, New You</strong></h2>
+										<ul class="ada-ul">
+											<li>
+												กินเที่ยว ช๊อป ถ่ายรูป เช็คอิน กับบรรยากาศเขาใหญ่ 
+											</li>
+											<li>
+												สุขใจไปกับกิจกรรมธรรมะ นั่งสมาธิ
+											</li>	
+											<li>
+												ดูแลสุขภาพกายกับทีมนักกายภาพบำบัดวิชาชีพ
+											</li>
+											<li>
+												สุดเด็ด! เผยเคล็ดลับการนวดยกกระชับใบหน้าแบบ V-shape
+											</li>
+										</ul>
+                                    </div>
+				</div>
+				<div class="span6">
+							<div class="aligncenter ada-yoga">
+									<img src="static/img/icons/yoga.png" alt="" />
+									<img width="32" height="32" src="static/img/icons/plus.svg" alt="" />
+									<img width="256" height="128" src="static/img/icons/physical.svg" alt="" />
+							</div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="span3 offset2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="static/img/team/jbow3.jpg" alt="" />
+						<h3>Jittima Wittsutrakran</h3>
+						<p>
+							Lead Physical Therapist
+						</p>
+					</div>
+				</div>
+				<div class="span3 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="static/img/team/ada.jpg" alt="" />
+						<h3>Ada Kaminkure</h3>
+						<p>
+							Lead Technologist
+						</p>
+					</div>
+				</div>
+				<div class="span3 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="static/img/team/bell.jpg" alt="" />
+						<h3>Thanyatorn Wittsutrakran</h3>
+						<p>
+							Lead Assistant
+						</p>
+					</div>
+				</div>
+				{% comment %} <div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="static/img/team/img-4.jpg" alt="" />
+						<h3>Mark Joe</h3>
+						<p>
+							UI designer
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="static/img/team/img-5.jpg" alt="" />
+						<h3>Stephen B</h3>
+						<p>
+							Digital imaging
+						</p>
+					</div>
+				</div> {% endcomment %}
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- end section: team -->
+	<!-- section: services -->
+	<section id="services" class="section orange">
+		<div class="container">
+			<h4>มีกิจกรรมอะไรบ้าง?</h4>
+			<!-- Four columns -->
+			<div class="row">
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img width="160" height="160" src="static/img/icons/check.svg" alt="" />
+						<h2>ตรวจสุขภาพสุดพิเศษ</h2>
+						<p>
+							เป็นการออกแบบการรักษา ตรวจร่างกายพร้อมทั้งวางแผนประกอบการรักษาแบบเฉพาะบุคคล คุณจึงมั่นใจได้ว่า นี่แหละคือการดูแลรักษาในแบบเฉพาะคุณคนเดียวเท่านั้น!
+						</p>
+					</div>
+				</div>
+				<div class="span3 animated flyIn">
+					<div class="service-box">
+						<img width="160" height="160" src="static/img/icons/water_therapy.svg" alt="" />
+						<h2>กิจกรรมทางกายภาพบำบัด</h2>
+						<p>
+							การรักษาแบบ Full Treatment พร้อมอุปกรณ์ทางกายภาพบำบัดที่จะช่วยในการรักษา อาทิ เครื่อง Ultrasound, แผ่น Silica gel สำหรับประคบร้อน และอื่นๆ
+							ทั้งนี้เรายังมี การนวดเพื่อการผ่อนคลาย และที่ขาดไม่ได้เลย การนวดเพื่อความงาม ทำใบหน้าให้เรียวแบบ V-shape
+						</p>
+					</div>
+				</div>
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img width="160" height="160" src="static/img/icons/yoga2.svg" alt="" />
+						<h2>ธรรมะเพื่อการผ่อนคลาย</h2>
+						<p>
+							นอกจากร่างกายจะได้พักแล้ว เรายังขอนำเสนอการพบความสุขทางจิตใจ ด้วยการนั้งสมาธิ ฝึกโยคะ ดื่มด่ำบรรยากาศภูเขารายล้อม และค้นหาความสงบภายใน กับ ธรรมะที่ฟังง่ายเอาไปใช้ได้จริง
+						</p>
+					</div>
+				</div>
+				<div class="span3 animated-slow flyIn">
+					<div class="service-box">
+						<img src="static/img/icons/basket.png" alt="" />
+						<h2>กินช็อปแบบคนรักสุขภาพ</h2>
+						<p>
+							มาเขาใหญ่ทั้งที! จะพลาดร้านอาหารเด็ดๆ และของฝากสุดพิเศษได้ยังไง เราจะพาทุกท่านไปยังสถานที่อันเป็น landmarks สำคัญของเขาใหญ่ และที่สำคัญ อาหารสะอาด รสชาติดี ไม่เป็นพิษต่อสุขภาพแน่นอน"
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section: services -->
+	<!-- section: works -->
+	<section id="works" class="section">
+		<div class="container clearfix">
+			<h4>สิ่งที่จะเกิดขึ้น...</h4>
+			<!-- portfolio filter -->
+			<div class="row">
+				<div id="filters" class="span12">
+					<ul class="clearfix">
+										<li>
+												<a href="#" data-filter="*" class="active">
+														<h5>ทั้งหมด</h5>
+												</a>
+										</li>
+										<li>
+												<a href="#" data-filter=".place">
+														<h5>สถานที่</h5>
+												</a>
+										</li>
+										<li>
+												<a href="#" data-filter=".treatment">
+														<h5>การรักษา</h5>
+												</a>
+										</li>
+										<li>
+												<a href="#" data-filter=".food">
+														<h5>อาหาร</h5>
+												</a>
+										</li>
+										<li>
+												<a href="#" data-filter=".room">
+														<h5>ห้องพัก</h5>
+												</a>
+										</li>
+										<li>
+												<a href="#" data-filter=".facility">
+														<h5>สิ่งอำนวยความสะดวก</h5>
+												</a>
+										</li>
+					</ul>
+				</div>
+				<!-- END PORTFOLIO FILTERING -->
+			</div>
+			<div class="row">
+				<div class="span12">
+					{% block profile %}{% endblock profile %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- spacer section -->
+	<section class="spacer bg3">
+		<div class="container">
+			<div class="row">
+				<div class="span12 aligncenter flyLeft">
+					<blockquote class="large">
+						We are an established and trusted web agency with a reputation for commitment and high integrity
+					</blockquote>
+				</div>
+				<div class="span12 aligncenter flyRight">
+					<i class="icon-rocket icon-10x"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end spacer section -->
+	<!-- section: blog -->
+	{% comment %} <section id="blog" class="section">
+		<div class="container">
+			<h4>กำหนดการ</h4>
+			<!-- Three columns -->
+			<div class="row">
+				<div class="span3">
+					<div class="home-post">
+						<div class="post-image">
+							<img class="max-img" src="static/img/blog/img1.jpg" alt="" />
+						</div>
+						<div class="post-meta">
+							<i class="icon-file icon-2x"></i>
+							<span class="date">June 19, 2013</span>
+							<span class="tags"><a href="#">Design</a>, <a href="#">Blog</a></span>
+						</div>
+						<div class="entry-content">
+							<h5><strong><a href="#">New design trends</a></strong></h5>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
+							</p>
+							<a href="#" class="more">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="span3">
+					<div class="home-post">
+						<div class="post-image">
+							<img class="max-img" src="static/img/blog/img2.jpg" alt="" />
+						</div>
+						<div class="post-meta">
+							<i class="icon-file icon-2x"></i>
+							<span class="date">June 19, 2013</span>
+							<span class="tags"><a href="#">Design</a>, <a href="#">News</a></span>
+						</div>
+						<div class="entry-content">
+							<h5><strong><a href="#">Retro is great</a></strong></h5>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
+							</p>
+							<a href="#" class="more">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="span3">
+					<div class="home-post">
+						<div class="post-image">
+							<img class="max-img" src="static/img/blog/img3.jpg" alt="" />
+						</div>
+						<div class="post-meta">
+							<i class="icon-file icon-2x"></i>
+							<span class="date">June 22, 2013</span>
+							<span class="tags"><a href="#">Design</a>, <a href="#">Tips</a></span>
+						</div>
+						<div class="entry-content">
+							<h5><strong><a href="#">Isometric mockup</a></strong></h5>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
+							</p>
+							<a href="#" class="more">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="span3">
+					<div class="home-post">
+						<div class="post-image">
+							<img class="max-img" src="static/img/blog/img4.jpg" alt="" />
+						</div>
+						<div class="post-meta">
+							<i class="icon-file icon-2x"></i>
+							<span class="date">June 27, 2013</span>
+							<span class="tags"><a href="#">News</a>, <a href="#">Tutorial</a></span>
+						</div>
+						<div class="entry-content">
+							<h5><strong><a href="#">Free icon set</a></strong></h5>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
+							</p>
+							<a href="#" class="more">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blankdivider30"></div>
+			<div class="aligncenter">
+				<a href="#" class="btn btn-large btn-theme">More blog post</a>
+			</div>
+		</div>
+	</section> {% endcomment %}
+
+	<!-- end spacer section -->
+	<!-- section: contact -->
+	<section id="contact" class="section pink">
+		<div class="container pink">
+			<h4>ลงทะเบียนได้เลย!</h4>
+			<p>
+				Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur ei
+				eum. Sumo aeque assentior te eam, pri nominati posidonium consttuam
+			</p>
+			<div class="blankdivider30">
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div class="cform" id="contact-form">
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="row">
+								<div class="span6">
+									<div class="field your-name form-group">
+										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<div class="validation"></div>
+									</div>
+									<div class="field your-email form-group">
+										<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+										<div class="validation"></div>
+									</div>
+									<div class="field subject form-group">
+										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+										<div class="validation"></div>
+									</div>
+								</div>
+								<div class="span6">
+									<div class="field message form-group">
+										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+										<div class="validation"></div>
+									</div>
+									<input type="submit" value="Send message" class="btn btn-theme pull-left">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- ./span12 -->
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span6 offset3">
+					<ul class="social-networks">
+						<li><a href="https://www.facebook.com/BeBalanceClinic/"><i class="icon-circled icon-bglight icon-facebook icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
+					</ul>
+					<p class="copyright">
+						&copy; Maxim Theme. All rights reserved.
+						<div class="credits">
+							<!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Maxim
+              -->
+							<a href="https://bootstrapmade.com/">Free Bootstrap Templates</a> by BootstrapMade.com
+							<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- ./container -->
+	</footer>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/jquery.scrollTo.js"></script>
+	<script src="static/js/jquery.nav.js"></script>
+	<script src="static/js/jquery.localScroll.js"></script>
+	<script src="static/js/bootstrap.js"></script>
+	<script src="static/js/jquery.prettyPhoto.js"></script>
+	<script src="static/js/isotope.js"></script>
+	<script src="static/js/jquery.flexslider.js"></script>
+	<script src="static/js/inview.js"></script>
+	<script src="static/js/animate.js"></script>
+	<script src="static/js/custom.js"></script>
+	<script src="static/contactform/contactform.js"></script>
+
+</body>
+
+</html>
