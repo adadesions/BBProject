@@ -37,30 +37,30 @@ ul#menu-main > li > a:focus,ul#menu-main > li > a:active, ul#menu-main > li > a.
 
 /* blog */
 .home-post .post-meta {
-	background: #1BAC91;
+	background: #ff90f2;
 }
 
 /* com */
 .tabbable ul.nav-tabs li.active a,.tabbable ul.nav-tabs li a:hover {
-	color: #1BAC91;
+	color: #1BAC;
 }
 .accordion .accordion-heading a.active {
 	color: #1BAC91;
 }
 
 #tweet ul li a {
-	color: #1BAC91;
+	color: #ff33e7;
 }
 
 
 /* works */
 #filters ul li a:hover h5, #filters ul li a.active h5 {
-	background: #1BAC91;
-	border-color: #1BAC91;
+	background: #ff33e7;
+	border-color: #ff33e7;
 }
 
 .portfolio .portfolio-overlay {
-	background: #1BAC91;
+	background: #ff93f1;
 }
 
 /* icon */
