@@ -15,7 +15,11 @@ def readimgfromlist(listfile):
     f = open(path, "r")
     files = {}
     for line in f:
-        files[line] = classifyer
+        cline = ("".join([project_dir, "/app/", line])).rstrip()
+        if os.path.isfile(cline):
+            files[line] = classifyer
+        else:
+            continue
     f.close()
 
     return files
