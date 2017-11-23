@@ -841,7 +841,9 @@ section#blog {
 	background-color: none;
 	border: none;
 	white-space: normal;
+	color: #000;
 }
+
 .blog-body li {
 	margin-left: 1em
 }
