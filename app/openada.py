@@ -1,6 +1,7 @@
 """These are functions have written by AdaFactor"""
 import os
 
+
 def readimgfromlist(listfile):
     """Read each line of listfile"""
     profile_class = ["place", "food", "treatment", "facility", "room"]

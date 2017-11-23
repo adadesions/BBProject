@@ -1,3 +1,4 @@
+{% autoescape off %}
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -156,24 +157,6 @@
 						</p>
 					</div>
 				</div>
-				{% comment %} <div class="span2 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="static/img/team/img-4.jpg" alt="" />
-						<h3>Mark Joe</h3>
-						<p>
-							UI designer
-						</p>
-					</div>
-				</div>
-				<div class="span2 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="static/img/team/img-5.jpg" alt="" />
-						<h3>Stephen B</h3>
-						<p>
-							Digital imaging
-						</p>
-					</div>
-				</div> {% endcomment %}
 			</div>
 		</div>
 		<!-- /.container -->
@@ -297,82 +280,9 @@
 			<h4>กำหนดการ</h4> 
 			<!-- Three columns -->
 			<div class="row">
-				<div class="span3">
-					<div class="home-post">
-						<div class="post-image">
-							<img class="max-img" src="static/img/blog/img1.jpg" alt="" />
-						</div>
-						<div class="post-meta">
-							<i class="icon-file icon-2x"></i>
-							<span class="date">June 19, 2013</span>
-							<span class="tags"><a href="#">Design</a>, <a href="#">Blog</a></span>
-						</div>
-						<div class="entry-content">
-							<h5><strong><a href="#">New design trends</a></strong></h5>
-							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-							</p>
-							<a href="#" class="more">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="span3">
-					<div class="home-post">
-						<div class="post-image">
-							<img class="max-img" src="static/img/blog/img2.jpg" alt="" />
-						</div>
-						<div class="post-meta">
-							<i class="icon-file icon-2x"></i>
-							<span class="date">June 19, 2013</span>
-							<span class="tags"><a href="#">Design</a>, <a href="#">News</a></span>
-						</div>
-						<div class="entry-content">
-							<h5><strong><a href="#">Retro is great</a></strong></h5>
-							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-							</p>
-							<a href="#" class="more">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="span3">
-					<div class="home-post">
-						<div class="post-image">
-							<img class="max-img" src="static/img/blog/img3.jpg" alt="" />
-						</div>
-						<div class="post-meta">
-							<i class="icon-file icon-2x"></i>
-							<span class="date">June 22, 2013</span>
-							<span class="tags"><a href="#">Design</a>, <a href="#">Tips</a></span>
-						</div>
-						<div class="entry-content">
-							<h5><strong><a href="#">Isometric mockup</a></strong></h5>
-							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-							</p>
-							<a href="#" class="more">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="span3">
-					<div class="home-post">
-						<div class="post-image">
-							<img class="max-img" src="static/img/blog/img4.jpg" alt="" />
-						</div>
-						<div class="post-meta">
-							<i class="icon-file icon-2x"></i>
-							<span class="date">June 27, 2013</span>
-							<span class="tags"><a href="#">News</a>, <a href="#">Tutorial</a></span>
-						</div>
-						<div class="entry-content">
-							<h5><strong><a href="#">Free icon set</a></strong></h5>
-							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. &hellip;
-							</p>
-							<a href="#" class="more">Read more</a>
-						</div>
-					</div>
-				</div>
+				{% for agenda in agenda_object %}
+					{% block blog %}{% endblock blog %}
+				{% endfor %}
 			</div>
 			<div class="blankdivider30"></div>
 		</div>
@@ -470,3 +380,4 @@
 </body>
 
 </html>
+{% endautoescape %}

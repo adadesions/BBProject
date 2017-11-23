@@ -1,8 +1,9 @@
 """Be Balance /root view controller"""
 
 from django.shortcuts import HttpResponse, render
+from app.models import Agenda
 import app.openada as ada
-from itertools import chain
+
 
 def index(req):
     """index view as / """
@@ -17,8 +18,14 @@ def index(req):
     for txt in list_files:
         list_data.update(ada.readimgfromlist(txt))
     finallist = list_data.items()
-    context = {"img_list": finallist}
+
+    agendas = Agenda.objects.all()
+    context = {
+        "img_list": finallist,
+        "agenda_object": agendas
+    }
     return render(req, 'app/index.html', context)
+
 
 def detail(req):
     """detail view as /view """

@@ -822,7 +822,7 @@ section#blog {
 }
 .home-post .post-meta span.date {
 	font-weight:700;
-	font-size:13px;
+	font-size:27px;
 	float:left;
 }
 .home-post .post-meta span.tags {
@@ -835,6 +835,16 @@ section#blog {
 	color:#fcfcfc;
 }
 
+.blog-body {
+	font-size: 18px;
+	padding: 0;
+	background-color: none;
+	border: none;
+	white-space: normal;
+}
+.blog-body li {
+	margin-left: 1em
+}
 
 
 /* === section about === */
