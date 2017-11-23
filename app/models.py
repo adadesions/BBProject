@@ -1,5 +1,6 @@
 """ Models for app """
 from django.db import models
+from django.utils import timezone
 
 
 class Agenda(models.Model):
@@ -14,4 +15,19 @@ class Agenda(models.Model):
         )
 
     def __str__(self):
-        return self.title
+        return '%s %s' % (self.id, self.date)
+
+
+class Applicant(models.Model):
+    """ Applicant Model """
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=128)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15)
+    recommender = models.CharField(max_length=128)
+    reason = models.TextField()
+    address = models.TextField()
+    date = models.DateField(timezone.now())
+
+    def __str__(self):
+        return '%s %s %s' % (self.id, self.name, self.date)

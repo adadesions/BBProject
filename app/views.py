@@ -27,6 +27,14 @@ def index(req):
     return render(req, 'app/index.html', context)
 
 
-def detail(req):
-    """detail view as /view """
-    return HttpResponse("Hey! Ada")
+def register(req):
+    """ registration function """
+    keys = ['name', 'email', 'phone', 'address', 'recommender', 'reason']
+    result = ""
+    for key in keys:
+        if key in req.POST:
+            result += req.POST[key]+" "
+            print(result)
+        else:
+            continue
+    return HttpResponse(result)

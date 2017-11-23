@@ -25,7 +25,7 @@
                             <span class="icon-bar"></span><span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-                        <h1 class="brand"><a href="{% url 'app:detail' %}">Be Balance Clinic</a></h1>
+                        <h1 class="brand"><a href="#">Be Balance Clinic</a></h1>
                             <!-- navigation -->
                             <nav class="pull-right nav-collapse collapse">
                                 <ul id="menu-main" class="nav">
@@ -303,25 +303,26 @@
 					<div class="cform" id="contact-form">
 						<div id="sendmessage">Your message has been sent. Thank you!</div>
 						<div id="errormessage"></div>
-						<form action="" method="post" role="form" class="contactForm">
+						<form action="{% url 'app:register' %}" method="post" role="form" class="contactForm">
+							{% csrf_token %}
 							<div class="row">
 								<div class="span6">
 									<div class="field your-name form-group">
-										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<input type="text" name="name" class="form-control" id="name" placeholder="ชื่อ-นามสกุล" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 										<div class="validation"></div>
 									</div>
 									<div class="field your-email form-group">
-										<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+										<input type="text" class="form-control" name="email" id="email" placeholder="อีเมลล์" data-rule="email" data-msg="Please enter a valid email" />
 										<div class="validation"></div>
 									</div>
 									<div class="field subject form-group">
-										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+										<input type="text" class="form-control" name="phone" id="subject" placeholder="เบอร์โทรศัพท์" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
 										<div class="validation"></div>
 									</div>
 								</div>
 								<div class="span6">
 									<div class="field message form-group">
-										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+										<textarea class="form-control" name="reason" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="เหตุผลที่ท่านอยากเข้าร่วมโครงการ"></textarea>
 										<div class="validation"></div>
 									</div>
 									<input type="submit" value="Send message" class="btn btn-theme pull-left">
@@ -376,7 +377,7 @@
 	<script src="static/js/inview.js"></script>
 	<script src="static/js/animate.js"></script>
 	<script src="static/js/custom.js"></script>
-	<script src="static/contactform/contactform.js"></script>
+	{% comment %} <script src="static/contactform/contactform.js"></script> {% endcomment %}
 
 </body>
 
