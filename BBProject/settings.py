@@ -25,7 +25,7 @@ SECRET_KEY = '2-&vp4y7=+l#()!0#1mbou67&962p@k)21mckms+0lcgg9mdaj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bebalanceclinic.com']
+ALLOWED_HOSTS = ['localhost', 'bebalanceclinic.com']
 
 
 # Application definition
