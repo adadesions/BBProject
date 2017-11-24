@@ -28,6 +28,7 @@ class Applicant(models.Model):
     reason = models.TextField()
     address = models.TextField()
     date = models.DateField(timezone.now())
+    time = models.TimeField(timezone.now())
 
     def __str__(self):
         return '%s %s %s' % (self.id, self.name, self.date)

@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         ferror = false, 
         emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
-        f.children('input').each(function(){ // run all inputs
+        f.children('button').each(function(){ // run all inputs
 
             var i = $(this); // current input
             var rule = i.attr('data-rule');
@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();		
             $.ajax({
                 type: "POST",
-                url: "contactform/contactform.php",
+                url: "/register",
                 data: str,
                 success: function(msg){
                    // alert(msg);
