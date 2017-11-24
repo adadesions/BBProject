@@ -1636,22 +1636,27 @@ i.icon-white {
 		padding:0;
 	}
 	.navbar-inner {
-	 padding-right: 20px;
-	 padding-left: 20px;	
+		margin: -0.5em;
+		margin-bottom: 2em;
 	}
 	
 	.navbar-inner h1.brand {
-		margin-left:20px;
+		margin: 1em;
+		font-size: 15px
 	}
 	
 	
 	.navbar-inner .btn-navbar {
-		margin:20px 20px 0;
+		padding: 0.5em;
+		margin: 1em;
+		margin-top: 0.7em;
+		/* margin:10px 20px 0; */
 	}
 	
 	.container {
-	 padding-right: 20px;
-	 padding-left: 20px;
+		padding: -0
+	 /* padding-right: 20px;
+	 padding-left: 20px; */
 	}	
 	.navbar-inverse .navbar-inner {
 		padding:0 20px 30px;
@@ -1688,7 +1693,11 @@ i.icon-white {
     
     /* Smartphones (portrait and landscape) ----------- */
 @media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
-
+.navbar-inner h1.brand {
+	margin: 0.5em;
+	margin-top: 1em;
+	font-size: 15px
+}
  section.section {
  padding: 1em 0;
 }
