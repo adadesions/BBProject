@@ -1,0 +1,10 @@
+static/img/happen/places/place10.jpg
+static/img/happen/places/place1.jpg
+static/img/happen/places/place2.jpg
+static/img/happen/places/place3.jpg
+static/img/happen/places/place4.jpg
+static/img/happen/places/place5.jpg
+static/img/happen/places/place6.jpg
+static/img/happen/places/place7.jpg
+static/img/happen/places/place8.jpg
+static/img/happen/places/place9.jpg
