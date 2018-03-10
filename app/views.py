@@ -6,7 +6,7 @@ from app.models import Agenda, Applicant
 import app.openada as ada
 
 
-def index(req):
+def index(request):
     """index view as / """
     list_files = [
         "placeslist.txt",
@@ -19,23 +19,23 @@ def index(req):
     for txt in list_files:
         list_data.update(ada.readimgfromlist(txt))
     finallist = list_data.items()
-    if 'registed' in req.session:
+    if 'registed' in request.session:
         pass
     else:
-        req.session['registed'] = False
+        request.session['registed'] = False
     agendas = Agenda.objects.all()
     context = {
         "img_list": finallist,
         "agenda_object": agendas,
-        "registed": req.session['registed']
+        "registed": request.session['registed']
     }
-    return render(req, 'app/index.html', context)
+    return render(request, 'app/index.html', context)
 
 
-def register(req):
+def register(request):
     """ registration function """
     keys = ['name', 'email', 'phone', 'recommender', 'reason']
-    data = req.POST
+    data = request.POST
     new_applicant = Applicant(
         name=data['name'],
         email=data['email'],
@@ -47,12 +47,16 @@ def register(req):
         )
     new_applicant.save()
 
-    req.session['registed'] = True
+    request.session['registed'] = True
     return redirect('/#contact')
     # return HttpResponse(new_applicant)
 
 
-def more_register(req):
+def more_register(request):
     """ Reset registed session """
-    req.session['registed'] = False
+    request.session['registed'] = False
     return redirect('/#contact')
+
+
+def marathon_ex(request):
+    return render(request, 'app/marathon.html')
