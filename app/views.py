@@ -58,5 +58,5 @@ def more_register(request):
     return redirect('/#contact')
 
 
-def marathon(request):
+def marathon_ex(request):
     return render(request, 'app/marathon.html')

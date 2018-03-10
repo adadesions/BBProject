@@ -3,8 +3,8 @@ from app import views
 
 app_name = 'app'
 urlpatterns = [
-    url('', views.index, name='index'),
-    url('register/', views.register, name='register'),
-    url('more-register/', views.more_register, name='more_register'),
-    url('marathon-exercise/', views.marathon, name='marathon'),
+    url(r'^$', views.index, name='index'),
+    url(r'^register/$', views.register, name='register'),
+    url(r'^more-register/$', views.more_register, name='more_register'),
+    url(r'^marathon-exercise/$', views.marathon_ex, name='marathon'),
 ]
