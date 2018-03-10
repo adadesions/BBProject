@@ -1,11 +1,224 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>Be Balance Clinic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../static/css/style1.css" rel="stylesheet">
+    <link href="../static/color/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/stretching.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico">
 </head>
 <body>
-    <h1>Marathon Page</h1>
+    <!-- navbar -->
+	<div class="navbar-wrapper">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container nav-container">
+                    <!-- Responsive navbar -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h1 class="brand"><a href={% url 'app:index' %}>Be Balance Physical Therapy Clinic</a></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="beba">
+            <div class="head-container">
+                <h2 style="color: #ffffff">Stretching Exercise</h2>
+            </div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../static/img/stretchingExercise/stretching-slide0.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>Stretching Exercise</h3>
+                        </div>      
+                    </div>
+            
+                    <div class="item">
+                        <img src="../static/img/stretchingExercise/stretching-slide1.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>5 ท่า warm up / cool down</h3>
+                        </div>      
+                    </div>
+                
+                    <div class="item">
+                        <img src="../static/img/stretchingExercise/stretching-slide2.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>เพื่อช่วยป้องกันและลดการบาดเจ็บจากการออกกำลังกาย</h3>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+
+            <div class="stretch">
+                <ul class="timeline">
+                    <li>
+                        <div class="avatar">
+                            <img src="../static/img/stretchingExercise/1.JPG">
+                        </div>
+                        <div class="bubble-container">
+                            <div class="bubble-left">
+                                <h2 class="h2-left">ยืดกล้ามเนื้อต้นขาด้านหลังและน่อง</h2>
+                                <p>- นำผ้าคล้องฝ่าเท้า</p>
+                                <p>- ใช้มือทั้งสองข้างจับปลายผ้าออกแรงดึงผ้าให้ปลายเท้ากระดก เข่าเหยียดตรง</p>
+                                <p>*รู้สึกตึงที่ต้นขาด้านหลังและน่อง</p>
+                            </div>
+                            <div class="arrow-left"></div>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="bubble-container">
+                            <div class="bubble-right">
+                                <h2 class="h2-right">ยืดกล้ามเนื้อก้น</h2>
+                                <p class="h2-right">- ใช้มือทั้งสองข้างกอดใต้หัวเข่า และออกแรงดึงเข่าไปชิดอก</p>
+                                <p class="h2-right">*รู้สึกตึงที่บริเวณก้น</p>
+                            </div>
+                            <div class="arrow-right"></div>
+                        </div>
+                        <div class="avatar">
+                            <img src="../static/img/stretchingExercise/2.JPG">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="avatar">
+                            <img src="../static/img/stretchingExercise/3.JPG">
+                        </div>
+                        <div class="bubble-container">
+                            <div class="bubble-left">
+                                <h2 class="h2-left">ยืดกล้ามเนื้อ Piriformis</h2>
+                                <p>- ไขว้ขาที่จะยืดเป็นเลข 4</p>
+                                <p>- งอเข่าด้านตรงข้าม</p>
+                                <p>- ใช้มือสองข้างโอบต้นขาด้านที่งอออกแรงดึงเข่าไปชิดอก</p>
+                                <p>*รู้สึกตึงบริเวณใต้สะโพก/ต้นขาด้านหลัง</p>
+                            </div>
+                            <div class="arrow-left"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bubble-container">
+                            <div class="bubble-right">
+                                <h2 class="h2-right">ยืดกล้ามเนื้อน่อง</h2>
+                                <p class="h2-right">- ใช้สองมือดันกำแพง</p>
+                                <p class="h2-right">- เหยียดขาข้างที่จะยืดไปด้านหลัง</p>
+                                <p class="h2-right">- งอเข่าด้านตรงข้ามไปด้านหน้า ถ่ายน้ำหนัก โน้มตัวไปขาที่อยู่ด้านหน้า</p>                        
+                                <p class="h2-right">*รู้สึกตึงที่น่องขาที่เหยียด</p>
+                            </div>
+                            <div class="arrow-right"></div>
+                        </div>
+                        <div class="avatar">
+                            <img src="../static/img/stretchingExercise/4.JPG">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="avatar">
+                            <img src="../static/img/stretchingExercise/5.JPG">
+                        </div>
+                        <div class="bubble-container">
+                            <div class="bubble-left">
+                                <h2 class="h2-left">ยืดกล้ามเนื้อต้นขาด้านหน้า</h2>
+                                <p>- มือจับปลายเท่าข้างที่ต้องการยืด</p>
+                                <p>- งอเข่าด้านตรงข้าม</p>
+                                <p>- ออกแรงดึงปลายเท้าให้ชิดก้น ต้นขาเหยียดไปด้านหลัง</p>
+                                <p>*ตึงต้นขาด้านหน้า</p>
+                            </div>
+                            <div class="arrow-left"></div>
+                        </div>
+                    </li>
+                    <li class="" style="background-color: #acacac;">
+                        <div class="input-send">
+                            <p class="chat">- ทุกท่าค้างไว้ในองศาที่รู้สึกตึง แต่ ไม่เจ็บ</p> 
+                            <p class="chat">- ค้างไว้ท่าละ 15-30 วินาที ทำซ้ำ10 ครั้ง...|</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa fa-image" style="margin-right: 15;font-size:40px;"></i>
+                            <i class="fa fa-smile-o" style="margin-right: 15;font-size:40px;"></i>
+                            <i class="fa fa-microphone" style="margin-right: 15;font-size:40px;"></i>
+                            <i class="fa fa-send" style="margin-right: 20;font-size:40px;color:rgb(0, 132, 255)"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="head-container">
+                <h2 style="color: #ffffff">Treatment เครื่องมือที่ช่วยในการรักษา(Modality)</h2>
+            </div>
+            <div class="stretch">
+                <div class="row" style="padding: 10 20">
+                    <div class="col-sm-4 text-center" style="border: 1px solid #353535">
+                        <img src="../static/img/stretchingExercise/treatment1.jpg" alt="" width="300" height="300">
+                    </div>
+                    <div class="col-sm-8" style="padding: 0 50;">
+                        <h1>Hot Pack แผ่นร้อน</h1>
+                        <p class="chat">ประโยชน์ของแผ่นเก็บความร้อน</p>
+                        <p class="chat">สามารถใช้ลดอาการปวด เพิ่มความยืดหยุ่น และการไหลเวียนของเนื้อเยื่อกล้ามเนื้อ </p>
+                        <p class="chat">หรือใช้ในกรณีที่มีการยึดติดของข้อต่อ ก่อนการดัดเพื่อเพิ่มช่วงการเคลื่อนไหว</p>
+                    </div>
+                </div>
+
+                <div class="row" style="padding: 10 20">
+                    <div class="col-sm-4 text-center" style="border: 1px solid #353535">
+                        <img src="../static/img/stretchingExercise/treatment2.jpg" alt="" width="300" height="300">
+                    </div>
+                    <div class="col-sm-8" style="padding: 0 50;">
+                        <h1>Tape เทปบำบัด</h1>
+                        <p class="chat">คุณสมบัติของเทปบำบัด</p>
+                        <p class="chat">- ช่วยการลดความเจ็บปวดลดความรุนแรงนักกีฬาที่ได้รับบาดเจ็บ</p> 
+                        <p class="chat">- คลายกล้ามเนื้อที่ทำงานมากเกินไป </p>
+                        <p class="chat">- กระตุ้นกล้ามเนื้อที่ทำงานน้อยให้ทำงานได้มากขึ้น</p> 
+                        <p class="chat">- ลดการบวม ในช่วงแรกที่บาดเจ็บ</p>
+                        <p class="chat">- เร่งกระบวนการซ่อมแซมตัวเองของร่างกาย โดยเพิ่มพื้นที่ระหว่างผิวหนังและกล้ามเนื้อ</p>
+                        <p class="chat">ทำให้การไหลเวียนของสารน้ำต่างๆดีขึ้น จึงหายเร็วขึ้น</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span6 offset3">
+                    {% comment %} <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBeBalanceClinic%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId=196968640820212" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> {% endcomment %}
+                    <ul class="social-networks">
+                        <li><a href="https://www.facebook.com/BeBalanceClinic/"><i class="icon-circled icon-bglight icon-facebook icon-2x"></i></a></li>
+                        <li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+                        <li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+                        <li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy; Maxim Theme. All rights reserved.
+                        <div class="credits">
+                            <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Maxim
+                -->
+                            <a href="https://bootstrapmade.com/">Free Bootstrap Templates</a> by BootstrapMade.com
+                            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                            <br />
+                            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@sean82?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Sean Afnan"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Sean Afnan</span></a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ./container -->
+    </footer>
 </body>
 </html>
